@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #949393;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+
+.see-message-logs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 2em;
+}
+
+.see-message-logs p{
+    background-color: #ebebeb;
+    width: 80%;
+    height: 100%;
+}
+
+
+.write-message-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.write-message-box .message-box-container{
+    position: relative;
+    width: 100%;
+}
+
+.write-message-box .message-box-container label{
+    position: absolute;
+    bottom: .85em;
+    left: .9em;
+    cursor: text;
+    border-radius: 15px 15px 0 0;
+    transition: all .2s ease;
+}
+
+.write-message-box .message-box-container input{
+    width: 100%;
+    height: 3.5em;
+    border-radius: 15px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid rgb(5, 148, 5);
+    background-color: #ebebeb;
+}
+
+.write-message-box .message-box-container input:focus + label{
+    bottom: 2.1em;
+    background-color: #ebebeb;
+    border-top: 1px solid rgb(5, 148, 5);
+    padding: .2em;
+}
